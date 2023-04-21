@@ -1,0 +1,27 @@
+﻿<Window x:Class="FirstPractic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstPractic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="BtnGoExOne" Content="ExcerciseOne"  Margin="10" Click="BtnGoExOne_Click"/>
+            <Button x:Name="BtnGoExTwo" Content="ExcerciseTwo" Margin="10" Click="BtnGoExTwo_Click"/>
+            <Button x:Name="BtnGoExthree" Content="ExcerciseThree"  Margin="10" Click="BtnGoExthree_Click"/>
+            <Button x:Name="BtnGoExFour" Content="ExcerciseFour"  Margin="10" Click="BtnGoExFour_Click"/>
+            <Button x:Name="BtnGoExFive" Content="ExcerciseFive"  Margin="10" Click="BtnGoExFive_Click"/>
+        </StackPanel>
+        <Frame x:Name="Pages" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+  
+            
+        
+         
+    </Grid>
+</Window>

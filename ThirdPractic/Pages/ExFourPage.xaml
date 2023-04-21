@@ -1,0 +1,40 @@
+﻿<Page x:Class="ThirdPractic.Pages.ExFourPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ThirdPractic.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Четвёртое задание" Style="{StaticResource StartPage}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Задание 4" Style="{StaticResource InfoLb}"
+               Grid.Column="1"/>
+        <Label Style="{StaticResource Lb}" Content="K = "
+               Grid.Row="1"/>
+        <Label Style="{StaticResource Lb}" Content="X = "
+               Grid.Row="2"/>
+        <TextBlock x:Name="Answer" Grid.Row="3"  TextAlignment="Center"
+                   FontSize="20" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="TbNumK" Grid.Row="1" Grid.Column="1" 
+                 Grid.ColumnSpan="2" />
+        <TextBox x:Name="TbNumX" Grid.Row="2" Grid.Column="1" 
+                 Grid.ColumnSpan="2" />
+        <Button x:Name="TbSub" Style="{StaticResource TbSubstract}" 
+                Grid.Row="5" Grid.Column="1" Click="TbSub_Click"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="SecondPractic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SecondPractic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Style="{StaticResource StartStack}">
+            
+            <Button x:Name="BtnExOne" Content="Первое задание" Click="BtnExOne_Click" Style="{StaticResource TbOrientation}"/>
+            <Button x:Name="BtnExTwo" Content="Второе задание" Click="BtnExTwo_Click" Style="{StaticResource TbOrientation}"/>
+            <Button x:Name="BtnExThree" Content="Третье задание" Click="BtnExThree_Click" Style="{StaticResource TbOrientation}"/>
+            <Button x:Name="BtnDopOne" Content="Первое доп задание " Click="BtnDopOne_Click" Style="{StaticResource TbOrientation}"/>
+            <Button x:Name="BtnDopTwoo" Content="Второе доп задание" Click="BtnDopTwoo_Click" Style="{StaticResource TbOrientation}"/>
+        </StackPanel>
+        <Frame x:Name="Frame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+    
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="FourthPractic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FourthPractic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Content="Первое задание" x:Name="BtnFirstEx" Click="BtnFirstEx_Click" Style="{StaticResource StartBtn}" />
+            <Button Content="Второе задание" x:Name="BtnSecondtEx"  Style="{StaticResource StartBtn}" Click="BtnSecondtEx_Click"/>
+            <Button Content="Третье задание" x:Name="BtnThirdEx" Style="{StaticResource StartBtn}" Click="BtnThirdEx_Click"/>
+            <Button Content="Четвёртое задание" x:Name="BtnFourthEx" Style="{StaticResource StartBtn}" Click="BtnFourthEx_Click"/>
+            <Button Content="Пятое задание" x:Name="BtnFivethEx" Style="{StaticResource StartBtn}" Click="BtnFivethEx_Click"/>
+            <Button Content="Шестое задание" x:Name="BtnSixethEx" Style="{StaticResource StartBtn}" Click="BtnSixethEx_Click"/>
+            <Button Content="Седьмое задание" x:Name="BtnSeventhEx" Style="{StaticResource StartBtn}" Click="BtnSeventhEx_Click"/>
+            <Button Content="Восьмое задание" x:Name="BtnEightEx" Style="{StaticResource StartBtn}" Click="BtnEightEx_Click"/>
+                <Button Content="Девятое задание" x:Name="BtnNinethEx" Style="{StaticResource StartBtn}" Click="BtnNinethEx_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+        <Frame x:Name="Pages" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

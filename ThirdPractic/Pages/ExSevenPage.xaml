@@ -1,0 +1,33 @@
+﻿<Page x:Class="ThirdPractic.Pages.ExSevenPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ThirdPractic.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Второе дополнительное задание" Style="{StaticResource StartPage}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Style="{StaticResource InfoLb}" Content="Второе дополнительное задание" 
+               Grid.ColumnSpan="2"/>
+        <Label Content="Целое число F=" Style="{StaticResource Lb}"
+               Grid.Row="1"/>
+        <TextBox x:Name="TbNumberF" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock x:Name="Answer" Grid.Row="2" Grid.ColumnSpan="2"
+                   FontSize="20" TextAlignment="Center"/>
+        <Button Style="{StaticResource TbSubstract}" Grid.Row="3"
+                Grid.ColumnSpan="2" x:Name="BtnSubExSeven" Click="BtnSubExSeven_Click"/>
+    </Grid>
+</Page>
