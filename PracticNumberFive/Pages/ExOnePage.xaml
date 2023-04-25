@@ -1,0 +1,38 @@
+﻿<Page x:Class="PracticNumberFive.Pages.ExOnePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PracticNumberFive.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="800"
+      Title="ExOnePage" Style="{StaticResource Page}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Задание 1" Grid.ColumnSpan="3"/>
+        <TextBlock Text="Числа" Grid.Row="1" VerticalAlignment="Center"/>
+        <TextBox x:Name="TbNumbers" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock Text="Входные даные" Grid.Row="2"/>
+        <TextBlock Text="Ответ" Grid.Row="3"/>
+        <Button x:Name="BntExOne" Style="{StaticResource ExButton}" 
+                Grid.Row="4" Grid.ColumnSpan="3" Click="BntExOne_Click"/>
+        <Button x:Name="BtnAddEXOne" Grid.Row="1" Grid.Column="2" 
+                Style="{StaticResource BtnAdd}" Click="BtnAddEXOne_Click"/>
+
+
+        <TextBlock x:Name="Answer" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="ListBoxExOne" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" />
+    </Grid>
+</Page>

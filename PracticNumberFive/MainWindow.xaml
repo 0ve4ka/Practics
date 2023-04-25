@@ -1,0 +1,36 @@
+﻿<Window x:Class="PracticNumberFive.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticNumberFive"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible">
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden">
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="BtnExOne" Content="Первое задание" 
+                    Style="{StaticResource StartBtn}" Click="BtnExOne_Click"/>
+                <Button x:Name="BtnExTwo" Content="Второе задание" 
+                    Style="{StaticResource StartBtn}" Click="BtnExTwo_Click"/>
+                <Button x:Name="BtnExThree" Content="Третье задание" 
+                    Style="{StaticResource StartBtn}" Click="BtnExThree_Click"/>
+                <Button x:Name="BtnExFour" Content="Четвёртое задание" 
+                    Style="{StaticResource StartBtn}" Click="BtnExFour_Click"/>
+                <Button x:Name="BtnExFive" Content="Пятое задание" 
+                    Style="{StaticResource StartBtn}" Click="BtnExFive_Click"/>
+                <Button x:Name="BtnExSix" Content="Шестое задание" 
+                    Style="{StaticResource StartBtn}" Click="BtnExSix_Click"/>
+                <Button x:Name="BtnExSeven" Content="Седьмое задание" 
+                    Style="{StaticResource StartBtn}" Click="BtnExSeven_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+        <Frame x:Name="Pages" Grid.Row="1" NavigationUIVisibility="Hidden" />
+    </Grid>
+    </ScrollViewer>
+</Window>
